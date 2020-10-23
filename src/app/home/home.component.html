@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+                <button (click) = "opened = !opened" mat-icon-button class="btn btn-primary" style="color: white;">
+                    <mat-icon aria-hidden="false" aria-label="menu icon">menu</mat-icon>
+                </button> &nbsp;&nbsp;
+                <a class="navbar-brand" href="#"><img class = "shadowed rounded" src="../assets/Logo.png" width="44px" height="40px">&nbsp;&nbsp;Prudential</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">
+                            <h6>| &nbsp;&nbsp;Participant</h6>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <mat-sidenav-container>
+                <mat-sidenav [(opened)] = "opened">
+                    <br/>
+                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[0]}" (click) = "onClick(0)">&nbsp;&nbsp;Dashboard</button>
+                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[1]}" (click) = "onClick(1)">&nbsp;&nbsp;Accounts</button>
+                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[2]}" (click) = "onClick(2)">&nbsp;&nbsp;Profile</button>
+                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[3]}" (click) = "onClick(3)">&nbsp;&nbsp;Activity</button>
+                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[4]}" (click) = "onClick(4)">&nbsp;&nbsp;Support</button>
+                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[5]}" (click) = "onClick(5)">&nbsp;&nbsp;Add Cash</button>
+                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[6]}" (click) = "onClick(6)">&nbsp;&nbsp;Get Cash</button>
+                </mat-sidenav>
+                <mat-sidenav-content>
+                    <app-main-dashboard *ngIf = "menuArray[0]"></app-main-dashboard>
+                </mat-sidenav-content>
+            </mat-sidenav-container>
+        </div>
+    </div>
+</div>

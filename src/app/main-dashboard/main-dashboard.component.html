@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <br/>
+            <button class="btn" [routerLink] = "['/dashboard']" [ngClass] = "{buttonClicked:dashboardArray[0]}" (click) = "onClick(0)">Dashboard</button> &nbsp;&nbsp;&nbsp;
+            <button class="btn" [routerLink] = "['/goals']" [ngClass] = "{buttonClicked:dashboardArray[1]}" (click) = "onClick(1)">Your Goals</button> &nbsp;&nbsp;&nbsp;
+            <button class="btn" [routerLink] = "['/loan']" [ngClass] = "{buttonClicked:dashboardArray[2]}" (click) = "onClick(2)">One Time Loan</button>&nbsp;&nbsp;&nbsp;
+            <button class="btn" [routerLink] = "['/onboarding']" [ngClass] = "{buttonClicked:dashboardArray[3]}" (click) = "onClick(3)">Onboarding</button>&nbsp;&nbsp;&nbsp; 
+            <button class="btn" [routerLink] = "['/studentLoan']" [ngClass] = "{buttonClicked:dashboardArray[4]}" (click) = "onClick(4)">Student Loan</button>&nbsp;&nbsp;&nbsp;   
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+

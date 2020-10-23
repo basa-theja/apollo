@@ -1,0 +1,10 @@
+.btn{
+    border-radius: 20px;
+    width: 150px;
+    background-color: rgb(224, 218, 218);
+}
+
+.buttonClicked{
+    background-color: #0275d8;
+    color: white;
+}

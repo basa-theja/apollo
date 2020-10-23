@@ -1,0 +1,12 @@
+.mCard{ 
+    max-width: 500px;
+    height: 450px;
+    margin-bottom: 50px; 
+    float: left; 
+    margin: 40px; 
+    font-family: calibri;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}

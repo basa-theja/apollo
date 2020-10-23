@@ -1,0 +1,22 @@
+.mCard{ 
+    width: 350px;
+    height: 400px;
+    margin-bottom: 50px; 
+    float: left; 
+    margin: 40px; 
+    font-family: calibri;
+}
+.center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mCard1{ 
+    width: 600px;
+    height: 400px;
+    margin-bottom: 50px; 
+    float: left; 
+    margin: 40px;
+    padding: 10px;
+    font-family: calibri;
+}

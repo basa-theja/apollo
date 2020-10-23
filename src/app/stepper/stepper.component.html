@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 style="font-size:40px; padding:10px 30px;">Onboarding</h1>
+    
+    <mat-horizontal-stepper labelPosition="bottom" linear style="max-width: 800px;" >
+      
+      <mat-step label= "Submit docs" completed={{toggle}}>
+          
+      <app-onboarding (OnToggle)="toggle=$event"></app-onboarding>
+      
+      </mat-step>
+      
+      <mat-step label="Enrollment" >
+      </mat-step>
+  
+      <mat-step label="Goals" >
+      </mat-step>
+  
+      <mat-step label="Complete" >
+      </mat-step>
+      
+    </mat-horizontal-stepper>
+  
+  </div>

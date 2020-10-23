@@ -1,0 +1,62 @@
+
+.mCard{ 
+    width: 370px;
+    height: 400px;
+    margin-bottom: 50px; 
+    float: left; 
+    margin: 30px; 
+    font-family: calibri;
+    padding-top: 0px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+  }
+
+.image{
+    
+    max-width: 380px;
+    height: 120px;
+}
+
+
+button {
+    color: #ecf0f1;
+    background:rgb(255, 255, 255);
+    width: 250px;
+    height: 250px;
+    border: 0;
+    outline: width 0.01px;
+    outline-color:rgb(214, 214, 214);
+    font-size: 1.5em;
+    position: relative;
+  }
+
+button span {
+    position: absolute;
+    transition: .3s;
+    background: rgb(214, 214, 214);
+    border-radius: 2px;
+  }
+  
+  button span:first-of-type {
+    top: 25%;
+    bottom: 25%;
+    width: 3%;
+    left: 49%;
+  }
+  
+  button span:last-of-type {
+    left: 25%;
+    right: 25%;
+    height: 3%;
+    top: 49%;
+  }
+
+table tr td{
+  padding-left: 20px;
+}
+  
+ 
+
+     

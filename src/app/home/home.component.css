@@ -1,0 +1,27 @@
+.sideButton{
+    border-radius: 0px;
+    border: none;
+}
+
+.sideButton:hover{
+    background-color:#FFFAFA;
+    border-left: 4px solid blue;
+}
+
+.buttonClicked{
+    background-color:#FFFAFA;
+    border-left: 4px solid blue;
+    font-size: 18px;
+}
+
+.col-md-12{
+    padding: 0px;
+}
+
+mat-sidenav-container{
+    height: 92vh;
+}
+mat-sidenav{
+    width: 250px;
+    background-color: #f3f2f2;
+}

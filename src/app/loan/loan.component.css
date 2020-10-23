@@ -1,0 +1,17 @@
+.chart{
+    margin: 0 auto;
+    
+}
+.mat-flat-button{
+    background-image:linear-gradient(to bottom right, rgba(0,128,0,.5), rgba(0,255,0,.5));
+    margin-top:15px;
+}
+
+.button1 {border-radius: 14px;}
+
+.button2 {border-radius: 20px;
+         border-color: black;
+         color: black;
+        text-align: center;
+        width: 160px;
+    }
