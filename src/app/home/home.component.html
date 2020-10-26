@@ -22,16 +22,22 @@
             <mat-sidenav-container>
                 <mat-sidenav [(opened)] = "opened">
                     <br/>
-                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[0]}" (click) = "onClick(0)">&nbsp;&nbsp;Dashboard</button>
-                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[1]}" (click) = "onClick(1)">&nbsp;&nbsp;Accounts</button>
-                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[2]}" (click) = "onClick(2)">&nbsp;&nbsp;Profile</button>
-                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[3]}" (click) = "onClick(3)">&nbsp;&nbsp;Activity</button>
-                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[4]}" (click) = "onClick(4)">&nbsp;&nbsp;Support</button>
-                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[5]}" (click) = "onClick(5)">&nbsp;&nbsp;Add Cash</button>
-                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[6]}" (click) = "onClick(6)">&nbsp;&nbsp;Get Cash</button>
+                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[0]}" (click) = "onClick(0)"><i class="fa fa-tachometer fa-2x" aria-hidden="true"></i> &nbsp;&nbsp;Dashboard</button>
+                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[1]}" (click) = "onClick(1)"><i class="fa fa-address-card fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Accounts</button>
+                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[2]}" (click) = "onClick(2)"><i class="fa fa-user fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profile</button>
+                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[3]}" (click) = "onClick(3)"><i class="fa fa-bar-chart fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Activity</button>
+                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[4]}" (click) = "onClick(4)"><i class="fa fa-phone fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Support</button>
+                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[5]}" (click) = "onClick(5)"><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add Cash</button>
+                    <button class="btn btn-default btn-block text-left sideButton" [ngClass] = "{buttonClicked:menuArray[6]}" (click) = "onClick(6)"><i class="fa fa-usd fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get Cash</button>
                 </mat-sidenav>
                 <mat-sidenav-content>
                     <app-main-dashboard *ngIf = "menuArray[0]"></app-main-dashboard>
+                    <app-accounts *ngIf = "menuArray[1]"></app-accounts>
+                    <app-profile *ngIf = "menuArray[2]"></app-profile>
+                    <app-activity *ngIf = "menuArray[3]"></app-activity>
+                    <app-support *ngIf = "menuArray[4]"></app-support>
+                    <app-add-cash *ngIf = "menuArray[5]"></app-add-cash>
+                    <app-get-cash *ngIf = "menuArray[6]"></app-get-cash>
                 </mat-sidenav-content>
             </mat-sidenav-container>
         </div>

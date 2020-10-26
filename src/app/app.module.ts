@@ -18,6 +18,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatStepperModule } from '@angular/material/stepper';
+import { AccountsComponent } from './accounts/accounts.component';
+import { ProfileComponent } from './profile/profile.component';
+import { GetCashComponent } from './get-cash/get-cash.component';
+import { AddCashComponent } from './add-cash/add-cash.component';
+import { ActivityComponent } from './activity/activity.component';
+import { SupportComponent } from './support/support.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +35,13 @@ import { MatStepperModule } from '@angular/material/stepper';
     StepperComponent,
     LoanComponent,
     GoalsComponent,
-    Pay_off_student_loanComponent
+    Pay_off_student_loanComponent,
+    AccountsComponent,
+    ProfileComponent,
+    GetCashComponent,
+    AddCashComponent,
+    ActivityComponent,
+    SupportComponent
   ],
   imports: [
     BrowserModule,

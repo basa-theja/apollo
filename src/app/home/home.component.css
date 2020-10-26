@@ -1,6 +1,7 @@
 .sideButton{
     border-radius: 0px;
     border: none;
+    padding: 15px;
 }
 
 .sideButton:hover{
