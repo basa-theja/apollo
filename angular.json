@@ -125,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "ApolloApplication"
+  "defaultProject": "ApolloApplication",
+  "cli": {
+    "analytics": "cba2d5e2-e685-4687-8b51-59280761a2d4"
+  }
 }

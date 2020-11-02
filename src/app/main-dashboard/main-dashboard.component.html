@@ -3,16 +3,16 @@
         <div class="col-md-1"></div>
         <div class="col-md-10" style="padding-left: 100px;">
             <br/>
-            <button class="btn" [routerLink] = "['/dashboard']" [ngClass] = "{buttonClicked:dashboardArray[0]}" (click) = "onClick(0)"><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;Dashboard</button> &nbsp;&nbsp;&nbsp;
-            <button class="btn" [routerLink] = "['/goals']" [ngClass] = "{buttonClicked:dashboardArray[1]}" (click) = "onClick(1)"><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Your Goals</button> &nbsp;&nbsp;&nbsp;
-            <button class="btn" [routerLink] = "['/loan']" [ngClass] = "{buttonClicked:dashboardArray[2]}" (click) = "onClick(2)"><i class="fa fa-usd" aria-hidden="true"></i>&nbsp;One Time Loan</button>&nbsp;&nbsp;&nbsp;
-            <button class="btn" [routerLink] = "['/onboarding']" [ngClass] = "{buttonClicked:dashboardArray[3]}" (click) = "onClick(3)"><i class="fa fa-clipboard" aria-hidden="true"></i>&nbsp;Onboarding</button>&nbsp;&nbsp;&nbsp; 
-            <button class="btn" [routerLink] = "['/studentLoan']" [ngClass] = "{buttonClicked:dashboardArray[4]}" (click) = "onClick(4)"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;Student Loan</button>&nbsp;&nbsp;&nbsp;   
+            <button class="btn" [routerLink] = "['/home/dashboard']" [ngClass] = "{buttonClicked:dashboardArray[0]}" (click) = "onClick(0)"><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;Dashboard</button> &nbsp;&nbsp;&nbsp;
+            <button class="btn" [routerLink] = "['/home/goals']" [ngClass] = "{buttonClicked:dashboardArray[1]}" (click) = "onClick(1)"><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Your Goals</button> &nbsp;&nbsp;&nbsp;
+            <button class="btn" [routerLink] = "['/home/loan']" [ngClass] = "{buttonClicked:dashboardArray[2]}" (click) = "onClick(2)"><i class="fa fa-usd" aria-hidden="true"></i>&nbsp;One Time Loan</button>&nbsp;&nbsp;&nbsp;
+            <button class="btn" [routerLink] = "['/home/onboarding']" [ngClass] = "{buttonClicked:dashboardArray[3]}" (click) = "onClick(3)"><i class="fa fa-clipboard" aria-hidden="true"></i>&nbsp;Onboarding</button>&nbsp;&nbsp;&nbsp; 
+            <button class="btn" [routerLink] = "['/home/studentLoan']" [ngClass] = "{buttonClicked:dashboardArray[4]}" (click) = "onClick(4)"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;Student Loan</button>&nbsp;&nbsp;&nbsp;   
         </div>
         <div class="col-md-1"></div>
     </div>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12" >
             <router-outlet></router-outlet>
         </div>
     </div>

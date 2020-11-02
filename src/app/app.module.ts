@@ -24,6 +24,8 @@ import { GetCashComponent } from './get-cash/get-cash.component';
 import { AddCashComponent } from './add-cash/add-cash.component';
 import { ActivityComponent } from './activity/activity.component';
 import { SupportComponent } from './support/support.component';
+import {LoginModule} from '@bit/swap.stepperfor.login/dist';
+import { LoginfirstComponent } from './loginfirst/loginfirst.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { SupportComponent } from './support/support.component';
     GetCashComponent,
     AddCashComponent,
     ActivityComponent,
-    SupportComponent
+    SupportComponent,
+    LoginfirstComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,9 @@ import { SupportComponent } from './support/support.component';
     MatCardModule,
     FormsModule,
     ReactiveFormsModule,
-    MatStepperModule
+    MatStepperModule,
+    LoginModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
